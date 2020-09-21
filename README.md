@@ -15,17 +15,17 @@ Next implementations will be to make the server linked to a database using mysql
 We added in the server a way to respond to different kind of request (GET, POST, DELETE ...)
 
 e.g. :
- '''javascript
+```javascript
  app.post('/users', function(req, res){...}
  app.delete('/users/:id(\\d+)', function(req, res){...}
- '''
+```
 
  And you can add parameters in the url (for users only)
 
  e.g. :
- '''javascript
+ ```javascript
  app.get('/users/:id(\\d+)', function(req, res) 
- '''
+```
 
  ## License
  [MIT](https://choosealicense.com/licenses/mit/)
